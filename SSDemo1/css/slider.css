@@ -1,0 +1,63 @@
+.slider {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 60%;
+	height: 100%;
+}
+
+.slide-img1 {
+	background-image: url("../images/Landscapes/1.jpg");
+	background-size: cover;
+	animation: fade 15s infinite;
+}
+
+.slide-img2 {
+	background-image: url("../images/Portraits/3.jpg");
+	background-size: cover;
+	animation: fade2 15s infinite;
+}
+
+.slide-img3 {
+	background-image: url("../images/Landscapes/5.jpg");
+	background-size: cover;
+	animation: fade3 15s infinite;
+}
+
+.slide-img4 {
+	background-image: url("../images/Portraits/7.jpg");
+	background-size: cover;
+	animation: fade4 15s infinite;
+}
+
+@keyframes fade {
+	0% {opacity:1}
+	25% { opacity: 0}
+	50% { opacity: 0}
+	75% { opacity: 0}
+	100% { opacity: 1}
+}
+
+@keyframes fade2 {
+	0% {opacity:0}
+	25% { opacity: 1}
+	50% { opacity: 0}
+	75% { opacity: 0}
+	100% { opacity: 0}
+}
+
+@keyframes fade3 { 
+	0% {opacity:0}
+	25% { opacity: 0}
+	50% { opacity: 1}
+	75% { opacity: 0}
+	100% { opacity: 0}
+}
+
+@keyframes fade4 {
+    0% {opacity:0}
+	25% { opacity: 0}
+	50% { opacity: 0}
+	75% { opacity: 1}
+	100% { opacity: 0}
+}

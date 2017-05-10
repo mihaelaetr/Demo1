@@ -8,6 +8,8 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/lightbox.css"/>
+	<script src="../js/main.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -25,48 +27,72 @@
 			<div class="name">
 				<h1>Etropolska</h1>
 				<h3>Photography</h3>
-				<h1>Portraits</h1>
+				<h1>Landscapes</h1>
 			</div>
-			<div class="portraitGallery">
+			<div class="land-gallery">
 				<div class="gallery">
-					<a target="_self" href="../images/portraits/1.jpg">
-						<img src="../images/portraits/1.jpg"/>
-					</a>
+					<img src="../images/portraits/1.jpg" onclick="openModal();currentSlide(1)"/>
 				</div>
 				<div class="gallery">
-					<a target="_self" href="../images/portraits/2.jpg">
-						<img src="../images/portraits/2.jpg"/>
-					</a>
+					<img src="../images/portraits/2.jpg" onclick="openModal();currentSlide(2)"/>
 				</div>
 				<div class="gallery">
-					<a target="_self" href="../images/portraits/3.jpg">
-						<img src="../images/portraits/3.jpg"/>
-					</a>
+					<img src="../images/portraits/3.jpg" onclick="openModal();currentSlide(3)"/>
 				</div>
 				<div class="gallery">
-					<a target="_self" href="../images/portraits/4.jpg">
-						<img src="../images/portraits/4.jpg"/>
-					</a>
-				</div>
-				<<div class="gallery">
-					<a target="_self" href="../images/portraits/5.jpg">
-						<img src="../images/portraits/5.jpg"/>
-					</a>
-				</div>
-				<<div class="gallery">
-					<a target="_self" href="../images/portraits/6.jpg">
-						<img src="../images/portraits/6.jpg"/>
-					</a>
+					<img src="../images/portraits/4.jpg" onclick="openModal();currentSlide(4)"/>
 				</div>
 				<div class="gallery">
-					<a target="_self" href="../images/portraits/7.jpg">
-						<img src="../images/portraits/7.jpg"/>
-					</a>
+					<img src="../images/portraits/5.jpg" onclick="openModal();currentSlide(5)"/>
 				</div>
 				<div class="gallery">
-					<a target="_self" href="../images/portraits/8.jpg">
-						<img src="../images/portraits/8.jpg"/>
-					</a>
+					<img src="../images/portraits/6.jpg" onclick="openModal();currentSlide(6)"/>
+				</div>
+				<div class="gallery">
+					<img src="../images/portraits/7.jpg" onclick="openModal();currentSlide(7)"/>
+				</div>
+				<div class="gallery">
+					<img src="../images/portraits/8.jpg" onclick="openModal();currentSlide(8)"/>
+				</div>
+			</div>
+
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+				    <div class="mySlides">
+				        <img src="../images/portraits/1.jpg" width="100%" height="750px" class="demo">
+				    </div>
+
+				    <div class="mySlides">
+				        <img src="../images/portraits/2.jpg" width="100%" height="650px" class="demo">
+				    </div>
+
+				    <div class="mySlides">
+				        <img src="../images/portraits/3.jpg" width="100%" height="750px" class="demo">
+				    </div>
+
+				    <div class="mySlides">
+				        <img src="../images/portraits/4.jpg" width="100%" height="750px" class="demo">
+				    </div>
+
+				    <div class="mySlides">
+				        <img src="../images/portraits/5.jpg" width="100%" height="650px" class="demo">
+				    </div>
+
+				    <div class="mySlides">
+				        <img src="../images/portraits/6.jpg" width="100%" height="750px" class="demo">
+				    </div>
+
+				    <div class="mySlides">
+				        <img src="../images/portraits/7.jpg" width="100%" height="650px" class="demo">
+				    </div>
+
+				    <div class="mySlides">
+				        <img src="../images/portraits/8.jpg" width="100%" height="650px" class="demo">
+				    </div>
+
+				    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 				</div>
 			</div>
 		</main>

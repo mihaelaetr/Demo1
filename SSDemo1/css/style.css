@@ -41,20 +41,11 @@ main {
 	font-size: 35px;
 }
 
-.slideGallery {
-	position: absolute;
-	right: 0px;
-	top: 0px;
-}
 
-.slideGallery img {
-	width: 700px;
-	height: 625px;
-}
 
-.landGallery, .portraitGallery {
+.land-gallery, .portrait-gallery {
 	position: absolute;
-	top: 50px;
+	top: 30px;
 	right: 0;
 	width: 700px;
 }
@@ -64,11 +55,12 @@ div.gallery {
     border: 1px solid #ccc;
     float: left;
     width: 200px;
-    height: 150px;
+    height: 180px;
 }
 
 div.gallery:hover {
     border: 1px solid #777;
+    cursor: pointer;
 }
 
 div.gallery img {
@@ -92,6 +84,66 @@ div.gallery img {
 	padding-top: 100px;
 	float: right;
 	font-size: 25px;
+}
+
+#cnt h3 {
+	font-size: 30px;
+	margin: 10px;
+}
+
+#cnt span {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.adr, .social-cnt {
+	position: absolute;
+	text-align: center;
+}
+
+.adr a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.social-cnt {
+	top: 0px;
+	right: 300px;
+}
+
+.adr {
+	top: 95px;
+	right: 230px;
+}
+
+.social-icons {
+	background-color: #000000;
+	display: inline-block;
+	background-image: url(../images/footer-sprite.png);
+	width: 33px;
+	height: 33px;
+}
+
+.fb {
+	background-position: 0 0;
+	margin-right: 20px;
+}
+
+.gp {
+	background-position: -34px 0;
+	margin-right: 20px;
+}
+
+.tw {
+	background-position: -68px 0;
+}
+
+#map {
+	width:600px;
+	height:300px;
+	position: absolute;
+	bottom: 10px;
+	right: 50px;
 }
 
 footer {
